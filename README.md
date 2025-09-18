@@ -1,59 +1,33 @@
-Project Overview
+Overview
 
-This project implements a machine learning system to detect fraudulent credit card transactions. It helps financial institutions identify suspicious activities and prevent losses.
+ML-based system to detect fraudulent credit card transactions, helping prevent financial losses.
 
 Dataset
 
-Source: Public credit card transaction dataset (e.g., Kaggle)
-
-Features: Transaction amount, time, and anonymized features (V1–V28)
+Features: Transaction amount, time, anonymized features (V1–V28)
 
 Target: Class (0 = legitimate, 1 = fraud)
 
-Methodology
+Approach
 
-Data Preprocessing
+Preprocessing: Handle missing values, feature scaling, train-test split
 
-Handle missing values
+EDA: Class imbalance analysis, feature visualization
 
-Feature scaling
+Modeling: Logistic Regression, Random Forest, XGBoost
 
-Train-test split
+Evaluation: Accuracy, ROC-AUC, Precision, Recall, F1-Score
 
-Exploratory Data Analysis (EDA)
+Results
 
-Analyze class imbalance
+XGBoost gave the best performance
 
-Visualize feature distributions
+High accuracy & ROC-AUC for fraud detection
 
-Modeling
+Tools
 
-Logistic Regression
-
-Random Forest
-
-XGBoost
-
-Evaluation Metrics
-
-Accuracy
-
-ROC-AUC
-
-Precision, Recall, F1-Score
-
-Key Results
-
-Achieved high accuracy and ROC-AUC score
-
-XGBoost provided the best performance for fraud detection
-
-Tools & Technologies
-
-Python, Pandas, NumPy, Matplotlib, Seaborn
-
-Scikit-learn, XGBoost
+Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost
 
 Conclusion
 
-The model can reliably detect fraudulent transactions, helping reduce financial risks. Future improvements could include real-time deployment and advanced feature engineering.
+Reliable fraud detection model; future work: real-time deployment & feature engineering
